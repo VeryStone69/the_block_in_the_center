@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Center</title>
+</head>
+<body>
+    <header class="header"><h1>7 ways to center align a block</h1></header>
+    <hr>
+
+    <h2>text-align</h2>
+        <div class="wrap center">
+            <div class="block blue"></div>
+        </div>
+        <code>
+            <span class="text_css">css</span>:
+            <p>text-align: center; <span class="text_underline">(for white div)</span></p>
+            <p>display: inline-block; <span class="text_underline">(for blue div)</span></p>
+        </code>
+        <hr>
+
+    <h2>margin-auto</h2>
+        <div class="wrap">
+            <div class="block green"></div>
+        </div>
+        <code>
+            <span class="text_css">css</span>:
+            <p>margin: 10px auto; <span class="text_underline">(for green div)</span></p>
+        </code>
+        <hr>
+
+    <h2>absolute</h2>
+        <div class="wrap relative">
+            <div class="block orange"></div>
+        </div>
+        <code>
+            <span class="text_css">css</span>:
+            <p>position: relative; <span class="text_underline">(for white div)</span></p>
+            <p>position: absolute; left: 50%; margin-left: -37.5px; <span class="text_underline">(for orange div)</span></p>
+        </code>
+        <hr>
+
+    <h2>absolute 2</h2>
+        <div class="wrap relative">
+            <div class="block orange2"></div>
+        </div>
+        <code>
+            <span class="text_css">css</span>:
+            <p>position: relative; <span class="text_underline">(for white div)</span>
+            </p>position: absolute;
+                left: 50%;
+                transform: translate(-50%,0);
+                margin-left: 0; (if there is another margin)
+                <span class="text_underline">(for orange div)</span>
+        </code>
+        <hr>
+
+    <h2>flexbox</h2>
+        <div class="wrap flex-div">
+            <div class="block cadetblue"></div>
+        </div>
+        <code>
+            <span class="text_css">css</span>:
+            <p>display: flex;
+                align-items: center;
+                justify-content: center;
+                <span class="text_underline">(for white div)</span>
+        </code>
+        <hr>
+
+    <h2>grid</h2>
+        <div class="wrap grid-div">
+            <div class="block darkslategray"></div>
+        </div>
+        <code>
+            <span class="text_css">css</span>:
+            <p>display: grid;
+                grid-template-areas: "a";
+                <span class="text_underline">(for white div)</span>
+            </p>grid-area: a;
+                align-self: center;
+                justify-self: center;
+                <span class="text_underline">(for darkslategray div)</span>
+        </code>
+        <hr>
+
+    <h2>old school. for real men. say NO to hyip.100% browser support</h2>
+        <div style="border: 2px solid black; min-width: 95px; min-height: 95px; margin: 10px auto;">
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            <div style="display: inline-block; background: #3d3017;" class="block oldschool"></div>
+        </div>
+        <code>
+            <span class="text_css">css</span>:
+            <p>only spaces
+                <span class="text_underline">(for white div)</span>
+        </code>
+    <hr>
+
+</body>
+</html>
